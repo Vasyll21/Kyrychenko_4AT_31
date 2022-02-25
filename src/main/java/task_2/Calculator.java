@@ -1,5 +1,7 @@
 package task_2;
 
+import task_3.exeption.DivByZeroException;
+
 public class Calculator {
 
     public static void main(String[] args) {
@@ -17,7 +19,12 @@ public class Calculator {
         System.out.println("a / b = " + div(a,b));
     }
 
-    private static double div(double a, double b) {
+    public static double div(double a, double b) {
+        if(b == 0) try{
+            throw new DivByZeroException("invalid dividor " + b);
+        }catch (DivByZeroException e) {
+            e.printStackTrace();
+        }
         return a / b;
     }
 
