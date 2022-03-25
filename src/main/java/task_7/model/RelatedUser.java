@@ -1,10 +1,13 @@
-package task_7;
+package task_7.model;
+
+import task_7.model.RelatedCar;
 
 import javax.persistence.*;
-import java.sql.Date;
+import java.util.Date;
+import java.util.Set;
 
 @Entity
-@Table(name = "users")
+@Table(name = "relatedusers")
 public class RelatedUser {
     @Id
     //@GeneratedValue(strategy = GenerationType.AUTO)
@@ -14,8 +17,27 @@ public class RelatedUser {
     private Date day_of_birdth;
 
     @OneToOne
-    @JoinColumn(name = "car_id")
+    @JoinColumn(name = "id_cars")
     private RelatedCar relatedCar;
+
+    @OneToMany(mappedBy = "user")
+    public Set<Phone> phoneSet;
+
+    public Set<Phone> getPhoneSet() {
+        return phoneSet;
+    }
+
+    public void setPhoneSet(Set<Phone> phoneSet) {
+        this.phoneSet = phoneSet;
+    }
+
+    public RelatedCar getRelatedCar() {
+        return relatedCar;
+    }
+
+    public void setRelatedCar(RelatedCar relatedCar) {
+        this.relatedCar = relatedCar;
+    }
 
     public Long getId_users() {
         return id_users;
@@ -49,7 +71,18 @@ public class RelatedUser {
         this.day_of_birdth = day_of_birdth;
     }
 
-    //`users` (
+    @Override
+    public String toString() {
+        return "RelatedUser{" +
+                "id_users=" + id_users +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", day_of_birdth=" + day_of_birdth +
+                ", phoneSet=" + phoneSet +
+                '}';
+    }
+
+//`users` (
     //  `id_users` INT NOT NULL AUTO_INCREMENT,
     //  `name` VARCHAR(45) NOT NULL,
     //  `age` INT NOT NULL,

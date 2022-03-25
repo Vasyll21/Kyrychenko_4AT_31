@@ -28,15 +28,15 @@ public class Calculator {
         return a / b;
     }
 
-    private static double mul(double a, double b) {
+    public static double mul(double a, double b) {
         return a * b;
     }
 
-    private static double sub(double a, double b) {
+    public static double sub(double a, double b) {
         return a - b;
     }
 
-    private static double add(double a, double b) {
+    public static Double add(double a, double b) {
         return a + b;
     }
 }

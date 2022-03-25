@@ -1,9 +1,9 @@
-package task_7;
+package task_7.model;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "cars")
+@Table(name = "relatedcars")
 public class RelatedCar {
     @Id
     //@GeneratedValue(strategy = GenerationType.AUTO)
@@ -13,7 +13,7 @@ public class RelatedCar {
     private String description;
 
     @OneToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "id_users")
     private RelatedUser relatedUser;
 
     public void setRelatedUser(RelatedUser relatedUser) {
@@ -50,6 +50,17 @@ public class RelatedCar {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    @Override
+    public String toString() {
+        return "RelatedCar{" +
+                "id_cars=" + id_cars +
+                ", model='" + model + '\'' +
+                ", brand='" + brand + '\'' +
+                ", description='" + description + '\'' +
+                ", relatedUser=" + relatedUser +
+                '}';
     }
 }
 //`cars` (

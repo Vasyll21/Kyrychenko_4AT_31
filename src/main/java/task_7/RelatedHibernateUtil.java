@@ -4,8 +4,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
-import task_6.Car;
-import task_6.User;
+import task_7.model.*;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -33,6 +32,9 @@ public class RelatedHibernateUtil {
 
         configuration.addAnnotatedClass(RelatedCar.class);
         configuration.addAnnotatedClass(RelatedUser.class);
+        configuration.addAnnotatedClass(Phone.class);
+        configuration.addAnnotatedClass(Employee.class);
+        configuration.addAnnotatedClass(Project.class);
 
         ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
                 .applySettings(configuration.getProperties()).build();
