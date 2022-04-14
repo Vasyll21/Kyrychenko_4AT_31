@@ -1,24 +1,15 @@
 package test_aqa.ui.steckoverflow;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import task_12.BaseUITest;
 
-public class StackOverflowTest {
-    WebDriver driver;
-
-    @BeforeTest
-    void initDriver(){
-        String driverPath = "C:\\Users\\Yenot\\IdeaProjects\\Kyrychenko_4AT_31\\driver\\chromedriver.exe";
-        System.setProperty("webdriver.chrome.driver", driverPath);
-
-        driver = new ChromeDriver();
-    }
+public class StackOverflowTest extends BaseUITest {
 
     @Test
     void stackOverflowTest() {
