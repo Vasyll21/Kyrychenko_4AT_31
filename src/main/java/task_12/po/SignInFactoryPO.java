@@ -1,5 +1,6 @@
 package task_12.po;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,10 +27,12 @@ public class SignInFactoryPO {
         PageFactory.initElements(new MyFieldDecorator(driver), this);
     }
 
+    @Step
     public void goToSite() {
         driver.get("https://www.instagram.com/");
     }
 
+    @Step
     public HomeFactoryPO clickSignIn() {
         this.insertLogin();
         this.insertPassword();
@@ -37,10 +40,12 @@ public class SignInFactoryPO {
         return new HomeFactoryPO(driver);
     }
 
+    @Step
     public void insertLogin() {
         loginArea.put("yenot.programer@gmail.com");
     }
 
+    @Step
     public void insertPassword() {
         passwordArea.put("mp3np4lk78");
     }
