@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "a03ae596-2e71-422d-b56b-012da97f6689",
+		"name": "Trello_Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create_board",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-trello-reqid",
+						"value": "6280f6cfa7ec72798e21746e-0.9998104606538614",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-trello-task",
+						"value": "create-board",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-trello-traceid",
+						"value": "6280fb97a1a60f1b08e2497f064484a5",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"idOrganization\":\"6280f6da3eb5cf83ed278586\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=Board_1&key=bbaf4a5698357a6513845b00c3bfefe1&token=695f413a3165b17b7143875dd51e7086ea6dd6b63f8ea7059765180687a1c411",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Board_1"
+						},
+						{
+							"key": "key",
+							"value": "bbaf4a5698357a6513845b00c3bfefe1"
+						},
+						{
+							"key": "token",
+							"value": "695f413a3165b17b7143875dd51e7086ea6dd6b63f8ea7059765180687a1c411"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_board",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create_todo_list",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.globals.set(\"todoListId\", pm.response.json().id)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/lists?name=ToDo&idBoard={{boardId}}&key=bbaf4a5698357a6513845b00c3bfefe1&token=695f413a3165b17b7143875dd51e7086ea6dd6b63f8ea7059765180687a1c411",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "ToDo"
+						},
+						{
+							"key": "idBoard",
+							"value": "{{boardId}}"
+						},
+						{
+							"key": "key",
+							"value": "bbaf4a5698357a6513845b00c3bfefe1"
+						},
+						{
+							"key": "token",
+							"value": "695f413a3165b17b7143875dd51e7086ea6dd6b63f8ea7059765180687a1c411"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_done_lust",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.globals.set(\"doneListId\", pm.response.json().id)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/lists?name=Done&idBoard={{boardId}}&key=bbaf4a5698357a6513845b00c3bfefe1&token=695f413a3165b17b7143875dd51e7086ea6dd6b63f8ea7059765180687a1c411",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Done"
+						},
+						{
+							"key": "idBoard",
+							"value": "{{boardId}}"
+						},
+						{
+							"key": "key",
+							"value": "bbaf4a5698357a6513845b00c3bfefe1"
+						},
+						{
+							"key": "token",
+							"value": "695f413a3165b17b7143875dd51e7086ea6dd6b63f8ea7059765180687a1c411"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_cart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.globals.set(\"cart\", pm.response.json().id)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards?token=695f413a3165b17b7143875dd51e7086ea6dd6b63f8ea7059765180687a1c411&key=bbaf4a5698357a6513845b00c3bfefe1&idList={{todoListId}}&name=Task",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "695f413a3165b17b7143875dd51e7086ea6dd6b63f8ea7059765180687a1c411"
+						},
+						{
+							"key": "key",
+							"value": "bbaf4a5698357a6513845b00c3bfefe1"
+						},
+						{
+							"key": "idList",
+							"value": "{{todoListId}}"
+						},
+						{
+							"key": "name",
+							"value": "Task"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_cart",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
