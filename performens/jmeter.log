@@ -1,0 +1,81 @@
+2022-05-27 01:08:02,745 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2022-05-27 01:08:02,759 INFO o.a.j.JMeter: Loading user properties from: D:\apache-jmeter-5.4.3\bin\user.properties
+2022-05-27 01:08:02,759 INFO o.a.j.JMeter: Loading system properties from: D:\apache-jmeter-5.4.3\bin\system.properties
+2022-05-27 01:08:02,763 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2022-05-27 01:08:02,763 INFO o.a.j.JMeter: Version 5.4.3
+2022-05-27 01:08:02,763 INFO o.a.j.JMeter: java.version=15.0.2
+2022-05-27 01:08:02,763 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2022-05-27 01:08:02,763 INFO o.a.j.JMeter: os.name=Windows 10
+2022-05-27 01:08:02,763 INFO o.a.j.JMeter: os.arch=amd64
+2022-05-27 01:08:02,763 INFO o.a.j.JMeter: os.version=10.0
+2022-05-27 01:08:02,763 INFO o.a.j.JMeter: file.encoding=Cp1252
+2022-05-27 01:08:02,763 INFO o.a.j.JMeter: java.awt.headless=true
+2022-05-27 01:08:02,763 INFO o.a.j.JMeter: Max memory     =8568963072
+2022-05-27 01:08:02,764 INFO o.a.j.JMeter: Available Processors =12
+2022-05-27 01:08:02,768 INFO o.a.j.JMeter: Default Locale=English (United States)
+2022-05-27 01:08:02,768 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2022-05-27 01:08:02,768 INFO o.a.j.JMeter: JMeterHome=D:\apache-jmeter-5.4.3
+2022-05-27 01:08:02,768 INFO o.a.j.JMeter: user.dir  =C:\Users\Yenot\IdeaProjects\Kyrychenko_4AT_31\performens
+2022-05-27 01:08:02,769 INFO o.a.j.JMeter: PWD       =C:\Users\Yenot\IdeaProjects\Kyrychenko_4AT_31\performens
+2022-05-27 01:08:07,308 INFO o.a.j.JMeter: IP: 26.247.245.205 Name: DESKTOP-FU0G5O5 FullName: DESKTOP-FU0G5O5
+2022-05-27 01:08:07,313 INFO o.a.j.s.FileServer: Default base='C:\Users\Yenot\IdeaProjects\Kyrychenko_4AT_31\performens'
+2022-05-27 01:08:07,314 INFO o.a.j.s.FileServer: Set new base='C:\Users\Yenot\IdeaProjects\Kyrychenko_4AT_31\performens'
+2022-05-27 01:08:07,412 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2022-05-27 01:08:07,426 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2022-05-27 01:08:07,428 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2022-05-27 01:08:07,430 INFO o.a.j.s.SaveService: Loading file: GetHost.jmx
+2022-05-27 01:08:07,457 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2022-05-27 01:08:07,474 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-05-27 01:08:07,474 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-05-27 01:08:07,474 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-05-27 01:08:07,475 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-05-27 01:08:07,475 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2022-05-27 01:08:07,475 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2022-05-27 01:08:07,499 INFO o.a.j.JMeter: Creating summariser <summary>
+2022-05-27 01:08:07,503 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2022-05-27 01:08:07,503 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-05-27 01:08:07,503 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2022-05-27 01:08:07,506 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2022-05-27 01:08:07,506 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2022-05-27 01:08:07,553 INFO o.a.j.JMeter: Running test (1653602887553)
+2022-05-27 01:08:07,567 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : LoginThreadGroup
+2022-05-27 01:08:07,567 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group LoginThreadGroup.
+2022-05-27 01:08:07,567 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-05-27 01:08:07,567 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-05-27 01:08:07,570 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2022-05-27 01:08:07,570 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : CreateIssueThreadGroup
+2022-05-27 01:08:07,570 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group CreateIssueThreadGroup.
+2022-05-27 01:08:07,570 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-05-27 01:08:07,570 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=1 ramp-up=1 delayedStart=false
+2022-05-27 01:08:07,571 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2022-05-27 01:08:07,571 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 3 : CloseIssueThreadGroup
+2022-05-27 01:08:07,571 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group CloseIssueThreadGroup.
+2022-05-27 01:08:07,571 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2022-05-27 01:08:07,571 INFO o.a.j.t.ThreadGroup: Starting thread group... number=3 threads=1 ramp-up=1 delayedStart=false
+2022-05-27 01:08:07,572 INFO o.a.j.t.ThreadGroup: Started thread group number 3
+2022-05-27 01:08:07,572 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2022-05-27 01:08:07,593 INFO o.a.j.t.JMeterThread: Thread started: LoginThreadGroup 1-1
+2022-05-27 01:08:07,593 INFO o.a.j.t.JMeterThread: Thread started: CreateIssueThreadGroup 2-1
+2022-05-27 01:08:07,593 INFO o.a.j.t.JMeterThread: Thread started: CloseIssueThreadGroup 3-1
+2022-05-27 01:08:07,594 INFO o.a.j.s.FileServer: Stored: C:/Users/Yenot/IdeaProjects/Kyrychenko_4AT_31/performens/user.csv
+2022-05-27 01:08:07,610 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = DESKTOP-FU0G5O5
+2022-05-27 01:08:07,613 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2022-05-27 01:08:07,614 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2022-05-27 01:08:07,614 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2022-05-27 01:08:07,614 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2022-05-27 01:08:07,614 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2022-05-27 01:08:30,038 INFO o.a.j.r.Summariser: summary +    455 in 00:00:22 =   20.2/s Avg:   146 Min:    52 Max:   299 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2022-05-27 01:09:00,042 INFO o.a.j.r.Summariser: summary +    606 in 00:00:30 =   20.2/s Avg:   148 Min:    52 Max:   301 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2022-05-27 01:09:00,042 INFO o.a.j.r.Summariser: summary =   1061 in 00:00:52 =   20.2/s Avg:   147 Min:    52 Max:   301 Err:     0 (0.00%)
+2022-05-27 01:09:30,092 INFO o.a.j.r.Summariser: summary +    626 in 00:00:30 =   20.8/s Avg:   143 Min:    50 Max:   665 Err:     0 (0.00%) Active: 3 Started: 3 Finished: 0
+2022-05-27 01:09:30,092 INFO o.a.j.r.Summariser: summary =   1687 in 00:01:23 =   20.4/s Avg:   146 Min:    50 Max:   665 Err:     0 (0.00%)
+2022-05-27 01:09:47,577 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: CloseIssueThreadGroup 3-1
+2022-05-27 01:09:47,577 INFO o.a.j.t.JMeterThread: Thread finished: CloseIssueThreadGroup 3-1
+2022-05-27 01:09:47,604 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: CreateIssueThreadGroup 2-1
+2022-05-27 01:09:47,604 INFO o.a.j.t.JMeterThread: Thread finished: CreateIssueThreadGroup 2-1
+2022-05-27 01:09:47,733 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: LoginThreadGroup 1-1
+2022-05-27 01:09:47,733 INFO o.a.j.t.JMeterThread: Thread finished: LoginThreadGroup 1-1
+2022-05-27 01:09:47,733 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2022-05-27 01:09:47,734 INFO o.a.j.s.FileServer: Close: C:/Users/Yenot/IdeaProjects/Kyrychenko_4AT_31/performens/user.csv
+2022-05-27 01:09:47,734 INFO o.a.j.r.Summariser: summary +    346 in 00:00:18 =   19.6/s Avg:   152 Min:    51 Max:   394 Err:     0 (0.00%) Active: 0 Started: 3 Finished: 3
+2022-05-27 01:09:47,734 INFO o.a.j.r.Summariser: summary =   2033 in 00:01:40 =   20.3/s Avg:   147 Min:    50 Max:   665 Err:     0 (0.00%)

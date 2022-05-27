@@ -1,0 +1,6 @@
+Login,Password,Role
+tester1,123456,reporter
+tester2,qwerty,reporter
+tester3,poletila,reporter
+developer1,123456,developer
+developer2,qwerty,developer
