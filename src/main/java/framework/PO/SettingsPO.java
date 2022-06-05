@@ -9,16 +9,16 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class SettingsPO {
-    @FindBy(xpath = "/html/body/div[1]/section/main/div/article/form/div[4]/div/textarea")
+    @FindBy(css = "#pepBio")
     TextArea bio;
 
-    @FindBy(xpath = "/html/body/div[1]/section/main/div/article/form/div[10]/div/div/button")
+    @FindBy(css = ".L3NKy")
     Button submit;
 
-    @FindBy(xpath = "/html/body/div[1]/section/nav/div[2]/div/div/div[3]/div/div[6]/div[1]/span/img")
+    @FindBy(css = "._6q-tv")
     Button account;
 
-    @FindBy (xpath = "/html/body/div[1]/section/nav/div[2]/div/div/div[3]/div/div[6]/div[2]/div[2]/div[2]/a[1]")
+    @FindBy (css = "a.-qQT3:nth-child(1)")
     Button accountPage;
 
     private WebDriver driver;

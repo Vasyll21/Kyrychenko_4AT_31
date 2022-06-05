@@ -12,16 +12,16 @@ import org.openqa.selenium.support.PageFactory;
 
 
 public class SignInPO {
-    @FindBy(xpath ="/html/body/div[1]/section/main/article/div[2]/div[3]/p")
+    @FindBy(css =".b_nGN")
     Text text;
 
-    @FindBy(xpath = "/html/body/div[1]/section/main/article/div[2]/div[1]/div[2]/form/div/div[1]/div/label/input")
+    @FindBy(css = "div.-MzZI:nth-child(1) > div:nth-child(1) > label:nth-child(1) > input:nth-child(2)")
     Input loginArea;
 
-    @FindBy(xpath = "/html/body/div[1]/section/main/article/div[2]/div[1]/div[2]/form/div/div[2]/div/label/input")
+    @FindBy(css = "div.-MzZI:nth-child(2) > div:nth-child(1) > label:nth-child(1) > input:nth-child(2)")
     Input passwordArea;
 
-    @FindBy(xpath = "/html/body/div[1]/section/main/article/div[2]/div[1]/div[2]/form/div/div[3]/button")
+    @FindBy(css = ".L3NKy")
     Button signInButton;
 
     private WebDriver driver;

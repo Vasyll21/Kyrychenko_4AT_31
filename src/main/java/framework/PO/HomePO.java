@@ -14,25 +14,25 @@ public class HomePO {
     @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[3]/button[2]")
     Button hideNotifications;
 
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[1]/div/div/div[1]/div[1]/section/nav/div[2]/div/div/div[3]/div/div[1]/div/a")
+    @FindBy(css = "._acrd > a:nth-child(1)")
     Button home;
 
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[1]/div/div/div[1]/div[1]/section/nav/div[2]/div/div/div[3]/div/div[6]/div[1]/span")
+    @FindBy(css = "span._aa8i")
     Button account;
 
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[1]/div/div/div[1]/div[1]/section/nav/div[2]/div/div/div[3]/div/div[6]/div[2]/div[2]/div[2]/a[2]")
+    @FindBy(css = "a._abm4:nth-child(2)")
     Button saved;
 
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[1]/div/div/div[1]/div[1]/section/nav/div[2]/div/div/div[3]/div/div[6]/div[2]/div[2]/div[2]/a[3]")
+    @FindBy(css = "a.oajrlxb2:nth-child(3)")
     Button settings;
 
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[1]/div/div/div[1]/div[1]/section/nav/div[2]/div/div/div[3]/div/div[6]/div[2]/div[2]/div[2]/div[2]")
+    @FindBy(css = "div._abm4:nth-child(6)")
     Button logOut;
 
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[1]/div/div/div[1]/div[1]/section/nav/div[2]/div/div/div[2]/input")
+    @FindBy(css = "._aawh")
     Input search;
 
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[1]/div/div/div[1]/div[1]/section/nav/div[2]/div/div/div[2]/div[3]/div/div[2]/div/div[1]/a")
+    @FindBy(css = "a._abm4:nth-child(1)")
     Button profile;
 
     private WebDriver driver;

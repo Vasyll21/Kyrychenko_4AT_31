@@ -9,10 +9,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SavedPO {
 
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[1]/div/div/div[1]/div[1]/section/main/div/div[2]/article/div/div/div/div[1]/a")
+    @FindBy(css = "._aabd > a:nth-child(1)")
     Button foto;
 
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[3]/div/div/div/div/div[2]/div/article/div/div[2]/div/div/div[1]/div/header/div[2]/div[1]/div[1]/div/span/a")
+    @FindBy(css = "._aaqt > div:nth-child(1) > span:nth-child(1) > a:nth-child(1)")
     Text account;
 
     private WebDriver driver;

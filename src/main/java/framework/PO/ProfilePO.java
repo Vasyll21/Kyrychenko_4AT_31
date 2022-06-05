@@ -8,16 +8,16 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class ProfilePO {
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[1]/div/div/div[1]/div[1]/section/main/div/header/section/div[1]/h2")
+    @FindBy(css = "h2._aacl")
     Text profileName;
 
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[1]/div/div/div[1]/div[1]/section/main/div/div[3]/article/div[1]/div/div[1]/div[1]/a")
+    @FindBy(css = "div._ac7v:nth-child(1) > div:nth-child(1) > a:nth-child(1)")
     Button foto;
 
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[3]/div/div/div/div/div[2]/div/article/div/div[2]/div/div/div[2]/section[1]/span[4]/div/div/button")
+    @FindBy(css = "._aamz > div:nth-child(1) > div:nth-child(1) > button:nth-child(1)")
     Button save;
 
-    @FindBy(xpath = "/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div")
+    @FindBy(css = "div.oajrlxb2")
     Button close;
 
     private WebDriver driver;

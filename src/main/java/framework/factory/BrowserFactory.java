@@ -2,7 +2,9 @@ package framework.factory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
 
@@ -12,8 +14,12 @@ public class BrowserFactory {
     public static WebDriver getChromedriver() {
         if(null == INSTANCE.get()) {
             System.setProperty("webdriver.chrome.driver", "driver"+ File.separator + "chromedriver.exe");
-            //ChromeDriverManager.getInstance().setup();
-            INSTANCE.set(new ChromeDriver());
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("window-size=750,800");
+
+            DesiredCapabilities capabilities = DesiredCapabilities.htmlUnit();
+            capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+            INSTANCE.set(new ChromeDriver(capabilities));
         }
         return INSTANCE.get();
     }
